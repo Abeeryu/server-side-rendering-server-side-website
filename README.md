@@ -44,6 +44,10 @@ Ik was veel bezig geweest met de server.js sinds ik daar moeite mee heb, daarom 
 ## Installatie
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
 
+1. clone de code. klik op de groene knop code en clone het of download zip.
+2. als je node hebt open je de terminal. Boven aan vind je de terminal button of klik ctrl + `
+3. dan type npm start of npm run dev om de server te starten
+4. wil je de server sluiten doe dan dit in de terminal ctrl + c
 
 ## Bronnen
 
