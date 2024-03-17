@@ -42,6 +42,7 @@ app.get('/', async function(request, response) {
     }
   });
 
+  // Stel het basis eindpoint in
 const apiUrl = "https://fdnd-agency.directus.app/items/"
 const apiFamily = (apiUrl + 'oba_family')
 const apiProfile = (apiUrl + 'oba_profile')
