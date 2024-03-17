@@ -19,19 +19,35 @@ app.use(express.static('public'))
 // Zorg dat werken met request data makkelijker wordt
 app.use(express.urlencoded({extended: true}))
 
-// //stel het oba profile in//
-// const apiData= 'https://fdnd-agency.directus.app/admin/content/oba_profile'
-
-// //stel het oba family in//
-// const apiData= 'https://fdnd-agency.directus.app/admin/content/oba_family'
-
-// //stel het oba items in//
-// const apiData= 'https://fdnd-agency.directus.app/admin/content/oba_item'
-
 
 //wat ik heb zelf geschreven//
 
 // Maak een GET route voor de index
+
+app.get('/', async function(request, response) {
+    try {
+      const families = await fetchJson(apiFamily);
+      const profiles = await fetchJson(apiProfile);
+ 
+      console.log(families.data);
+      console.log(profiles.data);
+ 
+      response.render('index', {
+        families: families.data,
+        profiles: profiles.data,
+      });
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      response.status(500).send('Internal Server Error');
+    }
+  });
+
+const apiUrl = "https://fdnd-agency.directus.app/items/"
+const apiFamily = (apiUrl + 'oba_family')
+const apiProfile = (apiUrl + 'oba_profile')
+const apiItem = (apiUrl + 'oba_item')
+
+
 app.get('/', function(request, response) {
     fetchJson('https://fdnd-agency.directus.app/items/oba_item').then((itemsDataUitDeAPI) => {
     response.render ('index', {items: itemsDataUitDeAPI.data})

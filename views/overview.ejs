@@ -1,6 +1,8 @@
 <%- include('./partials/head') %>
 
 <% items.forEach(item => { %>
+
+    <h1>Boeken</h1>
 <p>
     <a href="./detail/<%= item.id %>"> <%=item.title %></a>
 </p>
@@ -12,6 +14,5 @@
 </p>
 
 <% }) %>
-<h1>oba</h1>
 
 <%- include('./partials/foot') %>
