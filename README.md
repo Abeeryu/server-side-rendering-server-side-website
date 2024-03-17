@@ -39,8 +39,6 @@ We hebben eerste een index gemaakt waar alle gebruikers vind. Hier kan je een ge
 
 Ik heb gewerkt met CSS, javascript, EJS, Express en Node JS.
 We hebben de data uit directus cms gehaald, bijvoorbeeld de items en gebruikers.
-
-### Css:
 Ik was veel bezig geweest met de server.js sinds ik daar moeite mee heb, daarom ik heb nog geen styling gegeven aan mijn website.
 
 ## Installatie
@@ -50,6 +48,7 @@ Ik was veel bezig geweest met de server.js sinds ik daar moeite mee heb, daarom 
 ## Bronnen
 
 Backlog: https://github.com/orgs/fdnd-agency/projects/5/views/6
+
 Directus: https://fdnd-agency.directus.app/admin/content/oba_profile
 
 ## Licentie
